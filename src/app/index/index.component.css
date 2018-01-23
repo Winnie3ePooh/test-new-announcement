@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+}
+
+.row {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+  .col {
+    flex-basis: 100%;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+  .col {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+  .col {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+
+  .col {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+}

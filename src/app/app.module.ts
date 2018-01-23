@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { IndexComponent } from './index/index.component';
+import { MyRouterModule } from './my-router/my-router.module';
+import { HttpClientModule } from '@angular/common/http';
+import { NewsItemComponent } from './news-item/news-item.component'
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IndexComponent,
+    NewsItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MyRouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
